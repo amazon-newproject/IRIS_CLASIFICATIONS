@@ -14,7 +14,7 @@ filename = 'scaler.pickle'
 scaler = pickle.load(open(filename, 'rb'))
 
 @app.route('/predict',methods=['POST'])
- predict():
+def predict():
     sepallength = request.form.get('sepallength')
     sepalwidth = request.form.get('sepalwidth')
     petallength = request.form.get('petallength')
